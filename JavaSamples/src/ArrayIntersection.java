@@ -1,9 +1,9 @@
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-public class ArrayInteraction {
+//Set#intersect function of Maths
+public class ArrayIntersection {
 public static void main(String[] args) {
 	String[] sArr1 = {"dsff","ere"};
 	String[] sArr2 = {"dsff","eres"};
