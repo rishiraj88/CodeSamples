@@ -1,0 +1,23 @@
+package springboot.loadbalancer.service;
+
+import org.springframework.stereotype.Service;
+import springboot.loadbalancer.entity.User;
+
+import java.util.List;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+    List<User> list = List.of(
+                new User(2021L,"Rishi Raj", "2342342"),
+            new User(2022L,"Maikel", "78978798"),
+            new User(2024L,"Alex", "56161561")
+            );
+
+    @Override
+    public User getUser(Long id) {
+        return
+                list.stream().filter(user -> user.getUserId().equals(id)).findAny().orElse(null)
+                ;
+    }
+}

@@ -36,8 +36,9 @@ class RoleClass {
 	}
 	
 	RoleClass() {
-		//this.setPrivileges(Arrays.asList(new Privilege()));
-		this.setPrivileges(null);
+		this.setPrivileges(null); // may cause NPE if `privileges` is not set before calls to `getPrivileges()`
+		//this.setPrivileges(java.util.Arrays.asList(new Privilege()));
+		
 	}
 
 	private void setPrivileges(List<Privilege> privileges) {
