@@ -25,7 +25,8 @@ public class UserController {
     public User getUser(@PathVariable("userId") Long userId) {
         User user = userService.getUser(userId);
 
-        List<Contact> contacts =  restTemplate.getForObject("http://localhost:9002/contact/user/"+userId, List.class);
+//        List<Contact> contacts =  restTemplate.getForObject("http://localhost:9002/contact/user/"+userId, List.class);
+        List<Contact> contacts =  restTemplate.getForObject("http://contact-service/contact/user/"+userId, List.class);
 
         user.setContacts(contacts);
         return user;
