@@ -54,6 +54,8 @@ Two business microservices user-service and contact-service can be accessed at t
 
 This is the ease provided by Eureka Service Discovery and the implementation of API Gateway pattern for microservices architecture.
 
+### Kindly ignore the spelling error in path name ('Sping').
+
 # CodeSamples
 
 To visit the cloud-hosted site, smile and step in to [RRShops](https://rrshops.netlify.app/)
