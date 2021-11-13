@@ -17,10 +17,6 @@ code samples and quick PoC's
 
 ### [RRShopware](https://github.com/rishiraj88/RRShopware)
 
-### [RRShopware](https://github.com/rishiraj88/RRShopware)
-
-### [RRShopware](https://github.com/rishiraj88/RRShopware)
-
 # Spring Boot With Eureka (For Spring Cloud Architecture)
 A project showcasing Eureka Service Discovery implemented for Microservices.
 The following have been used here:
