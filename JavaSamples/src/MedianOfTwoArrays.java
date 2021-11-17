@@ -11,11 +11,11 @@ public class MedianOfTwoArrays {
 
 		nums1= new int[] {1,2};		nums2= new int[] {3,4};
 
-		nums1= new int[] {0,0};		nums2= new int[] {0,0};
+//		nums1= new int[] {0,0};		nums2= new int[] {0,0};
 
-//		nums1= new int[] {};			nums2= new int[] {1};
+		nums1= new int[] {};			nums2= new int[] {1};
 
-//		nums1= new int[] {2};			nums2= new int[] {};
+		nums1= new int[] {2};			nums2= new int[] {};
 
 		System.out.println(findMedianSortedArrays(nums1, nums2));
 	}

@@ -1,7 +1,6 @@
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 //19) How do you find duplicate elements in an array?
 //https://javaconceptoftheday.com/java-array-interview-questions-and-answers/
@@ -17,8 +16,7 @@ public class FindDuplicatesInArrayByStream {
 
 		Arrays.stream(arr)
 			.filter(i -> !uniqueSet.add(i))
-			//.boxed().collect(Collectors.toSet());
-			.distinct()
+			.distinct() // .boxed().collect(java.util.stream.Collectors.toSet()) //alternate approach, for wrapper type
 			.forEach(n -> System.out.print(n + " "));
 	}
 }

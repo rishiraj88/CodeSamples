@@ -106,8 +106,9 @@ And more on the way!
 - **DefaultEleValue.java :** to test default values of elements of array
 - **MedianOfTwoArrays.java :** to find the median for the elements of two arrays taken together
 - **SecondLargest.java :** to find second largest element in an array of integers
-- **FindDuplicatesInArray.java :** to  find duplicate elements in an array
+- **FindDuplicatesInArrayByMap.java :** to  find duplicate elements in an array
 - **FindDuplicatesInArrayByStream.java :** to find duplicate elements in an array
+- **StreamCollectMethods.java :** to demonstrate various use scenarios of Stream.collect() method with Collectors
 And more to come up!
 
 ### Notes

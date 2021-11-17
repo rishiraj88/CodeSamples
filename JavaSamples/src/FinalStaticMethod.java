@@ -1,5 +1,3 @@
-package demo01;
-
 //static method versus method overriding
 class FinalStatic {
 	final static int method1() {
