@@ -16,6 +16,7 @@ public class FilesReadStringWriteString {
 		var filePath = "httpClientLogs.txt";
 		try {
 			//JDK 11
+			// Path.of(filePath) or Paths.get(filePath) can be used to get Path
 			String fileData = Files.readString(Path.of(filePath));
 			System.out.println(fileData);
 			
