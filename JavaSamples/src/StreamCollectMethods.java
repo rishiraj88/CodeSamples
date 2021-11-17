@@ -1,13 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * 
  * @author rishiraj
  * 20211117
- * to demostrate various collection methods of Stream API.
+ * to demonstrate various collection methods of Stream API.
  */
 
 public class StreamCollectMethods {
@@ -19,76 +18,56 @@ public class StreamCollectMethods {
 		,new Person("Elena",55)
 		,new Person("Frank",66)
 		,new Person("Dan",44)		); 
-		Stream<Person> stream = pList.stream();
 		
 		//.collect(Collectors.toList())
-		stream.collect(Collectors.toList());
+		pList.stream().collect(Collectors.toList());
 		
 		//.collect(Collectors.toCollection(::new));
-		stream.collect(Collectors.toCollection(ArrayList::new));
+		pList.stream().collect(Collectors.toCollection(ArrayList::new));
 		
-		//.collect(Collectors.groupingBy(Person::getAge));
-		stream.collect(Collectors.groupingBy(Person::getAge));
+		//.collect(Collectors.groupingBy(Person::age));
+		pList.stream().collect(Collectors.groupingBy(Person::age));
 		
-		//.collect(Collectors.groupingBy(Person::getAge,Collectors.counting()));
-		stream.collect(Collectors.groupingBy(
-				Person::getAge	,Collectors.counting()
+		//.collect(Collectors.groupingBy(Person::age,Collectors.counting()));
+		pList.stream().collect(Collectors.groupingBy(
+				Person::age	,Collectors.counting()
 				));
 		
-/*		.collect(Collectors.groupingBy(Person::getAge,
+		/*.collect(Collectors.groupingBy(Person::age,
 				Collectors.mapping(
-					Person::getName,
+					Person::name,
 					Collectors.toList()
 				)));*/
-		stream.collect(Collectors.groupingBy(
-				Person::getAge	,Collectors.mapping(Person::getName, Collectors.toList())
+		pList.stream().collect(Collectors.groupingBy(
+				Person::age	,Collectors.mapping(Person::name, Collectors.toList())
 				));
 		
-		//.collect(Collectors.partitioningBy(p -> p.getAge()>43));
-		stream.collect(Collectors.partitioningBy(p -> p.getAge()>23));
+		//.collect(Collectors.partitioningBy(p -> p.age()>43));
+		pList.stream().collect(Collectors.partitioningBy(p -> p.age()>23));
 		
-		//.collect(Collectors.groupingBy(Person::getAge,Collectors.summingInt(Person::getAge)));
-		stream.collect(Collectors.groupingBy(
-				Person::getAge	,Collectors.summingInt(Person::getAge)
+		//.collect(Collectors.groupingBy(Person::age,Collectors.summingInt(Person::age)));
+		pList.stream().collect(Collectors.groupingBy(
+				Person::age	,Collectors.summingInt(Person::age)
 				));
 		
-		//.collect(Collectors.groupingBy(Person::getAge,Collectors.averagingInt(Person::getAge)));
-		stream.collect(Collectors.groupingBy(
-				Person::getAge	,Collectors.averagingInt(Person::getAge)
+		//.collect(Collectors.groupingBy(Person::age,Collectors.averagingInt(Person::age)));
+		pList.stream().collect(Collectors.groupingBy(
+				Person::age	,Collectors.averagingInt(Person::age)
 				));
 		
 		//.collect(Collectors.counting());
-		stream.collect(Collectors.counting());
+		pList.stream().collect(Collectors.counting());
 		
 		//.collect(Collectors.joining("'"));
-		stream.map(p -> p.getName()).collect(Collectors.joining(" with "));
+		pList.stream().map(p -> p.name()).collect(Collectors.joining(" with "));
 		
-		//.collect(Collectors.maxBy( (a1,a2) -> a1.getAge() - a2.getAge() ));
-		stream.collect(
+		//.collect(Collectors.maxBy( (a1,a2) -> a1.age() - a2.age() ));
+		pList.stream().collect(
 				Collectors.maxBy(
-							(p1,p2) -> p1.getAge() - p2.getAge()
+							(p1,p2) -> p1.age() - p2.age()
 						)
 				);
 		
 	}
 }
-class Person {
-	private String name;
-	private int age;
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", age=" + age + "]";
-	}
-	public String getName() {
-		return name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public Person(String name, int age) {
-		super();
-		this.name = name;
-		this.age = age;
-	}
-	
-}
+record Person(String name, int age) {}

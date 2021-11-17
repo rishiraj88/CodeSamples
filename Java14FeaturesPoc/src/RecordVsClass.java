@@ -1,12 +1,14 @@
 /**
  * 
  * @author rishiraj
- *	Records provide a compact syntax for declaring classes which act as transparent carriers for immutable data.
+ *	Records provide a compact syntax for declaring classes which act as 
+ *	transparent carriers for immutable data.
  *
- *	A new type with keyword <code>record<code>, is like a final class, which is not abstract and all its
- *	fields are final.
+ *	A new type with keyword <code>record<code>, is like a final class, 
+ *	which is not abstract and all its fields are final.
  *
- *	The record itself takes care of construction generation, public getters, equals(), hashCode() and toString().
+ *	The record itself takes care of constructor generation, public getters,
+ *	equals(), hashCode() and toString().
  *
  *	Setters are not available for fields.
  *
