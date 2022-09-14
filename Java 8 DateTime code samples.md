@@ -1,5 +1,5 @@
 //java8 Date/Time/Calendar samples:
-
+// All time treasure, full of gold
 class DateTimeCalendar {
 
 //immutability sample
