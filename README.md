@@ -32,10 +32,11 @@ Two business microservices user-service and contact-service can be accessed at t
 
 This is the ease provided by Eureka Service Discovery and the implementation of API Gateway pattern for microservices architecture.
 
-#### Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
+### Geek Note
+Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
 `To err, to share, to get feedback <- my way of learning!`
 
-To visit the cloud-hosted site, smile and step in to [RRShops](https://rrshops.netlify.app/)
+
 
 ## 2. Java 17 Features [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java17Features/src)
 - restore always-Strict floating-point semantics

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -78,6 +79,9 @@ public class StreamCollectMethods {
 							(p1,p2) -> p1.age() - p2.age()
 						)
 				);
+		
+		List<String> list = new ArrayList<String>();
+		list.sort(Comparator.comparing(String::toString));
 		
 	}
 }
