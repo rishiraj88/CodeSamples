@@ -31,3 +31,17 @@ Two business microservices user-service and contact-service can be accessed at t
 > http://localhost/contact/user/2024
 
 This is the ease provided by Eureka Service Discovery and the implementation of API Gateway pattern for microservices architecture.
+
+### Screenshots:
+
+#### Eureka Dashboard
+![Spring Eureka Dashboard](assets/images/Spring-Eureka-_-System-Status.png)
+
+#### User Service
+![User Service](assets/images/user-service.png)
+
+#### Contact Service
+![Contact Service](assets/images/contact-service.png)
+
+#### Workspace
+![Workspace](assets/images/workspace.png)
