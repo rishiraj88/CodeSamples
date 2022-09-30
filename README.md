@@ -8,7 +8,7 @@ The following have been used here:
 
 - Spring Boot v2.5.6
 - Java 17
-- Various dependencies for different Microservices/modules
+- Various dependencies for Microservices/modules
 
 ### Spring Boot and Java Specifications:
 ![Spring Boot and Java](SpingBootWithEureka/assets/images/Spring-Boot-and-Java-versions.jpg)
@@ -35,7 +35,6 @@ This is the ease provided by Eureka Service Discovery and the implementation of 
 ### Geek Note
 Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
 `To err, to share, to get feedback <- my way of learning!`
-
 
 
 ## 2. Java 17 Features [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java17Features/src)
