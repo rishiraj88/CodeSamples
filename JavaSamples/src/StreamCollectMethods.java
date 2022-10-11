@@ -85,4 +85,5 @@ public class StreamCollectMethods {
 		
 	}
 }
+// Java 14 record type
 record Person(String name, int age) {}
