@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/dem/.m2/repository/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28.jar"/>
+	<classpathentry kind="lib" path="./slf4j-api-1.7.36.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
