@@ -31,7 +31,7 @@ java.util.function
 - IntToLongFunction#apply(int)
 - LongToDoubleFunction#apply(long)
 - LongToIntFunction#apply(long)
-- ToDoubleFunction#apply(T)
+- ToDoubleFunction#applyAsDouble(T)
 - ToIntFunction#apply(T)
 - ToLongFunction#applyAsLong(T)
 The names of the functional methods in JDK are slightly different, not always the same as shown above. The applicable method names are easy to infer and look up, such as applyAsLong(T) in the last interface above.

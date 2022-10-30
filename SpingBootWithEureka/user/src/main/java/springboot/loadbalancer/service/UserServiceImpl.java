@@ -1,9 +1,13 @@
 package springboot.loadbalancer.service;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import springboot.loadbalancer.entity.User;
 
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -15,9 +19,12 @@ public class UserServiceImpl implements UserService {
             );
 
     @Override
-    public User getUser(Long id) {
-        return
-                list.stream().filter(user -> user.getUserId().equals(id)).findAny().orElse(null)
-                ;
+    public ResponseEntity<User> getUser(Long id) {
+        User user = list.stream().filter(u -> u.getUserId().equals(id)).findAny().orElse(null);
+        
+        if(null != user) 
+            return new ResponseEntity<User>(user,HttpStatus.OK); 
+        else
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 }
