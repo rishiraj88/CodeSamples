@@ -8,8 +8,8 @@ package java11;
     <version>3.0.2</version>
 </dependency>
 */
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+//import javax.annotation.Nonnull;
+// import javax.annotation.Nullable;
 /**
  * 
  * @author rishiraj
@@ -22,8 +22,8 @@ public class LambdaLocalVars {
 		var y = 2;
 		
 		//JDK 11 var for annotations
-		FuncInter funcObj = (@Nonnull var a,@Nullable var b) -> System.out.println(a + b);
-		funcObj.op(x, y);
+		// FuncInter funcObj = (@Nonnull var a,@Nullable var b) -> System.out.println(a + b);
+		// funcObj.op(x, y);
 	}
 }
 
