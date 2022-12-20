@@ -17,4 +17,4 @@
 ## Text Block
 ![](../assets/java14features/screenshot.1670931614.png)
 
-![](../assets/java11features/screenshot.1670931622.png)
+![](../assets/java14features/screenshot.1670931622.png)
