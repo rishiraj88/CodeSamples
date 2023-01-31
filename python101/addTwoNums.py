@@ -1,6 +1,6 @@
 # method 1 (with predefined numbers)
 
-num1 =  10
+num1 = 10
 num2 = 20
 
 # style a
