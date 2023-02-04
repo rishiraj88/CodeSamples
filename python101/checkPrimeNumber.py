@@ -1,12 +1,12 @@
-num = int(input("Enter a number to check for being prime: "))
-
+print("Prime Number Check")
+num = int(input("Enter a number to check: "))
 
 status = "prime"
 if num <= 1:
     status = "not prime"
 
 for i in range(2,num):
-    if num%i == 0:
+    if 0 == num%i:
         status = "not prime"
         break
 

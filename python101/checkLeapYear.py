@@ -1,7 +1,11 @@
-year = int(input("Enter a year number to check for being leap or non leap: "))
+print("Leap or Non-leap Year")
+year = int(input("Enter a year number to check: "))
 # handle invalid inputs like negative or zero year number, non-numeric strings input
-status = "non leap"
 
+if 0 >=year:
+    print("Invalid input!")
+
+status = "non-leap"
 if year%400 == 0:
     status = "leap"
 elif year%100 == 0:

@@ -2,11 +2,14 @@
 x = 10
 y = 20
 
-print("The number are: ",x," and ",y)
+print("The numbers are: ",x," and ",y)
+print("Swapping the numbers...")
 temp = x
 x = y
 y = temp
-print("The number are: ",x," and ",y)
+print("Now the number are: ",x," and ",y)
+
+# ===
 
 # method 2 (without the third variable)
 x = 11
