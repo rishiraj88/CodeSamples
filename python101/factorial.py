@@ -1,6 +1,6 @@
-num = int(input("Enter a number to get the factorial of: "))
+num = int(input("Enter a number to get its factorial: "))
 
-# method 1 (using iteration -- for loop)
+# method 1 (using iteration -- for loop) - start
 if 0 > num:
     print("Factorial of the number is not possible.")
 elif 1 >= num:
@@ -10,8 +10,11 @@ else:
     for i in range(2,num+1):
         factorial *= i
     print("The factorial of",num,"is:",factorial)
+# method 1 (using iteration -- for loop) - end
 
-# method 2 (using recursion)
+# method 2 (using recursion) - start
+# num = int(input("Enter a number to get its factorial: "))
+
 def fact(a):
     if 0 > num:
         return None
@@ -22,3 +25,4 @@ def fact(a):
 num = int(input("Enter a number to get the factorial of: "))
 factorial = fact(num)
 print("The factorial of",num,"is:",factorial)
+# method 2 (using recursion) - end
