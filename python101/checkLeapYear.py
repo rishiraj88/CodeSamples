@@ -9,7 +9,7 @@ status = "non-leap"
 if year%400 == 0:
     status = "leap"
 elif year%100 == 0:
-    status = "non leap"
+    status = "non-leap"
 elif year%4 == 0:
     status = "leap"
 print("The year",year, "is a",status,"year.")

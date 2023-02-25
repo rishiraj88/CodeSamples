@@ -4,7 +4,7 @@ num3 = float(input("Enter the third number: "))
 
 if num1>num2:
     if num1>num3:
-        print("The first numer",num1,"is the largest.")
+        print("The first number",num1,"is the largest.")
     else:
         print("The third number",num3,"is the largest.")
 elif num2>num3:
