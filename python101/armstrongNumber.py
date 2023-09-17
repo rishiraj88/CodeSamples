@@ -1,10 +1,11 @@
+#An Armstrong number equals the sum of the cubes of its digits.
 n = int(input("Enter a number to check for being an Armstrong number: "))
 
 sum = 0
 
 temp = n
 
-while temp != 0:
+while 0 != temp:
     digit = temp%10
     cube = digit**3
     sum += cube
