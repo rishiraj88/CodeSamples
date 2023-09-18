@@ -11,6 +11,7 @@ public class CollectionPlus {
 
 	public static void main(String[] args) {
 
+		//setup -- start
 		ArrayList<Integer> integerList = new ArrayList<>();
 		integerList.add(1);
 		integerList.add(2);
@@ -20,20 +21,24 @@ public class CollectionPlus {
 		sList.add("3");
 		sList.add("4");
 		System.out.println("String list: "+sList);
+		// setup -- complete
 
 		// JDK 8
+		// Collection.stream()
+		// Stream.toArray()
 		Integer[] integerArr = integerList.stream().toArray(size -> new Integer[size]);
 		//System.out.println("Integer array: "+Arrays.toString(integerArr));
 		String[] sArr = sList.stream().toArray(size -> new String[size]);
 
 
 		// JDK 11
-		//Integer[] integerArr 
+		// Collection.toArray()
 		integerArr = integerList.toArray(size -> new Integer[size]);
 		System.out.println("\nInteger array with List.toArray(size -> new Integer[size]: "+Arrays.toString(integerArr));
 		integerArr = integerList.toArray(Integer[] :: new);
 		System.out.println("Integer array with List.toArray(Integer[] :: new): "+Arrays.toString(integerArr));
-		//String[] sArr 
+
+		//
 		sArr = sList.toArray(size -> new String[size]);
 		System.out.println("\nString array with List.toArray(size -> new String[size]): "+Arrays.toString(sArr));
 		sArr = sList.toArray(String[]:: new);
