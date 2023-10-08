@@ -38,7 +38,8 @@ public class CollectionPlus {
 		integerArr = integerList.toArray(Integer[] :: new);
 		System.out.println("Integer array with List.toArray(Integer[] :: new): "+Arrays.toString(integerArr));
 
-		//
+		// JDK 11
+		// Collection.toArray()
 		sArr = sList.toArray(size -> new String[size]);
 		System.out.println("\nString array with List.toArray(size -> new String[size]): "+Arrays.toString(sArr));
 		sArr = sList.toArray(String[]:: new);

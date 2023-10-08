@@ -26,6 +26,7 @@ public class StringApiPlus {
 		System.out.println("String strip:" + s2.strip() + ":End");
 		System.out.println("String strip:" + s3.strip() + ":End");
 
+
 		// stripLeading()
 		System.out.println("String stripLeading:" + s1.stripLeading() + ":End");
 		System.out.println("String stripLeading:" + s2.stripLeading() + ":End");

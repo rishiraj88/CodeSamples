@@ -11,7 +11,8 @@ public class OptionalIsEmpty {
 	public static void main(String[] args) {
 		Optional o = Optional.of(" ");
 		o = Optional.empty();
-		
+		o = Optional.of(" ");
+
 		//JDK 11
 		System.out.println("is empty?: "+o.isEmpty());
 		
