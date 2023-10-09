@@ -1,4 +1,4 @@
-n = int(input("Enter a number to see its multiplication table: "))
+n = int(input("Enter a number to view its multiplication table: "))
 
 # method 1 (using for range() loop)
 for i in range(1,11): # 1,2,3,4,5,6,7,8,9,10
