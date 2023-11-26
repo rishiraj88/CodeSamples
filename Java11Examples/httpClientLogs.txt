@@ -163,4 +163,29 @@
 </body></html>
 
 200
-{"status":"success","data":{"name":"tammy144","salary":"5000","age":"20"},"message":"Successfully! Record has been updated."}
+{"status":"success","data":{"name":"tammy144","salary":"5000","age":"20"},"message":"Successfully! Record has been updated."}new string added200
+{
+  "args": {
+    "uname": "name",
+    "password": "pass"
+  },
+  "headers": {
+    "x-forwarded-proto": "https",
+    "x-forwarded-port": "443",
+    "host": "postman-echo.com",
+    "x-amzn-trace-id": "Root=1-6563a70e-052714f028dc58af78814678",
+    "user-agent": "Java-http-client/20.0.2"
+  },
+  "url": "https://postman-echo.com/get?uname=name&password=pass"
+}
+301
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://dummy.restapiexample.com/api/v1/create">here</a>.</p>
+</body></html>
+
+200
+{"status":"success","data":{"name":"tammy144","salary":"5000","age":"20"},"message":"Successfully! Record has been updated."}new string added

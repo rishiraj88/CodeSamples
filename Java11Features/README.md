@@ -1,5 +1,6 @@
-# Java 11 Features
-
+# [archived] Java 11 Features
+These project files have been archived. See Java11Examples for updated code and files.
+ 
 ## Collection Plus
 ![](../assets/java11features/screenshot.1670930974.png)
 
