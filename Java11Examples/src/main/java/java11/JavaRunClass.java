@@ -6,6 +6,6 @@ package java11;
  */
 public class JavaRunClass {
 	public static void main(String[] args) {
-		System.out.println("run directly with java, and without javac");
+		System.out.println("Run directly with java, and without javac!");
 	}
 }
