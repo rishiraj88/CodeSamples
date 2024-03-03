@@ -2,8 +2,7 @@ package java14;
 
 public class TextBlockVsString {
 	public static void main(String[] args) {
-		String strTraditional = "Beste Arbeitgeber:innen Deutschlands: Das erwartet dich im Artikel\n" + "\n"
-				+ "Das sind die 10 besten Arbeitgeber:innen Deutschlands\n"
+		String strTraditional = "Das sind die 10 besten Arbeitgeber:innen Deutschlands\n"
 				+ "    Platz 1: dm-drogerie markt GmbH + Co. KG\n" 
 				+ "    Platz 2: Techniker Krankenkasse\n"
 				+ "    Platz 3: Ford-Werke GmbH\n" 
@@ -19,8 +18,6 @@ public class TextBlockVsString {
 		System.out.println(strTraditional);
 
 		String strTextBlock = """
-				Beste Arbeitgeber:innen Deutschlands: Das erwartet dich im Artikel
-
 				Das sind die 10 besten Arbeitgeber:innen Deutschlands
 				    Platz 1: dm-drogerie markt GmbH + Co. KG
 				    Platz 2: Techniker Krankenkasse

@@ -11,7 +11,7 @@ public class SwitchExpressions {
 	
 	static String stateNumberClass(int inputNumber) {
 		// See the beauty and the brevity of code
-		// break; is not needed to exit the switch upon finding a match
+		// break; is not needed to exit the switch when a match has been made
 		return switch(inputNumber) {
 		case 0 -> "zero";
 		case 1,3,5,7,9 -> "odd";
