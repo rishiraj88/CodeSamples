@@ -2,16 +2,18 @@
 n = int(input("Enter a number to check for being an Armstrong number: "))
 
 sum = 0
-
+order = len(str(n))
 temp = n
+
+isOrNot = " not "
 
 while 0 != temp:
     digit = temp%10
-    cube = digit**3
+    cube = digit**order
     sum += cube
-    temp = temp//10
+    temp //= 10
 
 if sum == n:
-    print("The entered number",n,"is an Armstrong number.")
-else:
-    print("The entered number",n,"is not an Armstrong number.")
+    isOrNot = " "
+
+print("The entered number",n,"is"+isOrNot+"an Armstrong number.")
