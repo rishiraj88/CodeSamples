@@ -19,12 +19,8 @@ public class UserServiceImpl implements UserService {
             );
 
     @Override
-    public ResponseEntity<User> getUser(Long id) {
+    public User getUser(Long id) {
         User user = list.stream().filter(u -> u.getUserId().equals(id)).findAny().orElse(null);
-        
-        if(null != user) 
-            return new ResponseEntity<User>(user,HttpStatus.OK); 
-        else
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        return user;
     }
 }

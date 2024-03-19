@@ -12,7 +12,7 @@
 	<artifactId>api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>api-gateway</name>
-	<description>Spring Boot Microservice for API Gateway for whole app</description>
+	<description>API Gateway for Contact Search app for accessing its microservices</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2020.0.4</spring-cloud.version>

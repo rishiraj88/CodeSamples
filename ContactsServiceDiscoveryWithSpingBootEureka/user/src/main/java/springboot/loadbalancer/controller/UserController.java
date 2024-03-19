@@ -1,6 +1,8 @@
 package springboot.loadbalancer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,12 +24,13 @@ public class UserController {
     private RestTemplate restTemplate;
 
     @GetMapping("/{userId}")
-    public User getUser(@PathVariable("userId") Long userId) {
+    public ResponseEntity<User> getUser(@PathVariable("userId") Long userId) {
         User user = userService.getUser(userId);
-
-        List<Contact> contacts =  restTemplate.getForObject("http://contact-service/contact/user/"+userId, List.class);
-        user.setContacts(contacts);
-
-        return user;
+        if (null != user) {
+            List<Contact> contacts = restTemplate.getForObject("http://contact-service/contact/user/" + userId, List.class);
+            user.setContacts(contacts);
+            return new ResponseEntity<User>(user, HttpStatus.OK);
+        } else
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 }
