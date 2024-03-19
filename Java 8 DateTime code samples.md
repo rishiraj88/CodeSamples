@@ -26,11 +26,14 @@ LocalDate.parse("2021-10-12");
 LocalTime.of(9,6,43);
 LocalTime.parse("10:19:36");
 
-DateTimeFormatter formatter = DateTimeFormatter.ofPattern(""); //"yyyy-MM-dd"
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern(strFormat); //"yyyy-MM-dd"
 LocalDateTime dt = LocalDateTime.parse(strDT,formatter); //"2021-10-12","yyyy-MM-dd"
 LocalDateTime.plusHours();
 LocalDateTime.plusDays();
 LocalDateTime.getDayOfWeek(); //MONDAY
+
+ldt.format(formatter); // return String
+
 
 ZonedDateTime zdt = ZonedDateTime.of(ldt, ZoneId.of("US/Pacific"));
 
@@ -49,12 +52,14 @@ pzId.getRules().isDaylightSavings(zdt.toInstant()); //returns boolean
 zdt.with(TemporalAdjusters.next(DayOfWeek.THURSDAY));
 
 ZonedDateTime totalityAustin = ZonedDateTime.of(2024,4,8 ,13,35,56,0 ,ZoneId.of("US/Central"));
+new String(Period.ofMonths(1)); //P1M
 ZonedDateTime reminder = totalityAustin.minus(Period.ofMonths(1));
 reminder.withZoneSameInstant(ZoneId.of("US/Pacific"));
 
 long longMins = ChronoUnit.MINUTES.between(lt1,lt2); //returns long
 Duration pt = Duration.ofMinutes(longMins); //period to time
 sysout(pt); //PT1H18M
+// P signifies period, T signifies time. Hence PT signifies 'period of time'.
 
 LocalTime.plus(ptDurationOrPeriod); //takes TemporalAmount
 LocalTime.plusMinutes(longMins);
