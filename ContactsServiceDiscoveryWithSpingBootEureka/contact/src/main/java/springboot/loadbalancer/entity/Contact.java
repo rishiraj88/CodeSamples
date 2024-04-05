@@ -6,6 +6,7 @@ public class Contact {
     private String contactName;
 
     private Long userId;
+    private String userName;
 
     public Contact(Long contactId, String email, String contactName, Long userId) {
         this.contactId = contactId;
@@ -47,5 +48,13 @@ public class Contact {
 
     public Long getUserId() {
         return userId;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }
