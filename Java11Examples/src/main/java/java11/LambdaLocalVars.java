@@ -1,19 +1,11 @@
 package java11;
 
-/*
-<!-- https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305 -->
-<dependency>
-    <groupId>com.google.code.findbugs</groupId>
-    <artifactId>jsr305</artifactId>
-    <version>3.0.2</version>
-</dependency>
-*/
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 /**
  * 
  * @author rishiraj
- *	to demonstrate var for lambda functions
+ *	to demonstrate the usage of var keyword, especially for lambda functions
  */
 public class LambdaLocalVars {
 	public static void main(String[] args) {

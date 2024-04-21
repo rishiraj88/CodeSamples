@@ -19,7 +19,7 @@ import java.nio.file.StandardOpenOption;
 public class HttpClientPlus {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		var getEndpoint = "https://postman-echo.com/get?uname=name&password=pass";
-		var localFilePath = "httpClientLogs.txt";
+		var localFilePath = "httpClientLogs2024.txt";
 		File file = Path.of(localFilePath).toFile();
 		if(!file.exists()) file.createNewFile();
 		
@@ -40,7 +40,7 @@ public class HttpClientPlus {
 	
 	var postEndpoint = "http://dummy.restapiexample.com/api/v1/create";
 	 
-	 String inputJson = "{ \"name\":\"tammy133\", \"salary\":\"5000\", \"age\":\"20\" }";
+	 String inputJson = "{ \"name\":\"rr\", \"salary\":\"105000\", \"age\":\"30\" }";
 	 
 					req = HttpRequest.newBuilder()
 							.uri(URI.create(postEndpoint))
@@ -57,7 +57,7 @@ public class HttpClientPlus {
 	
 		var putEndpoint = "https://dummy.restapiexample.com/public/api/v1/update/21";
 	 
-	  inputJson = "{ \"name\":\"tammy144\", \"salary\":\"5000\", \"age\":\"20\" }";
+	  inputJson = "{ \"name\":\"rishi\", \"salary\":\"150000\", \"age\":\"32\" }";
 	 
 					req = HttpRequest.newBuilder()
 							.uri(URI.create(putEndpoint ))

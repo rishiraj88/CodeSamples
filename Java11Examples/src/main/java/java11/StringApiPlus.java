@@ -1,6 +1,5 @@
 package java11;
 /**
- * 
  * @author rishiraj
  * to demonstrate the new methods of String API in Java 11
  */
