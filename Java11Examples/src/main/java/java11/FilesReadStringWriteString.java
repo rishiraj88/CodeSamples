@@ -13,7 +13,7 @@ public class FilesReadStringWriteString {
 	public static void main(String[] args) {
 
 		// Absolute path format for Windows: "D:\\tmp\\finalvariables.txt"
-		var filePath = "httpClientLogs.txt";
+		var filePath = "httpClientLogs2024.txt";
 		try {
 			//JDK 11
 			// Path.of(filePath) or Paths.get(filePath) can be used to get Path
