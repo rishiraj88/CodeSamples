@@ -1,16 +1,13 @@
 package java11;
 /**
- * 
  * @author rishiraj
- * to demonstrate the new methods of String API in Java 11
+ * to demonstrate the new methods of String API (added in Java 11)
  */
 public class StringApiPlus {
 	public static void main(String[] args) {
 		String s1 = "";
 		String s2 = " ";
 		String s3 = " d ";
-
-		// JDK 11 methods of String API
 
 		// isBlank()
 		System.out.println("String blank: " + s1.isBlank());

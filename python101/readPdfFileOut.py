@@ -1,3 +1,5 @@
+# script to read text out of a PDF file
+# may be readied in the form of a utility module as well
 import pyttsx3
 import PyPDF2
 
