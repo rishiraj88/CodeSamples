@@ -11,11 +11,11 @@ The following have been used here:
 - Various dependencies for Microservices/modules
 
 ### Spring Boot and Java Specifications:
-![Spring Boot and Java](SpingBootWithEureka/assets/images/Spring-Boot-and-Java-versions.jpg)
+![Spring Boot and Java](ContactsServiceDiscoveryWithSpingBootEureka/assets/images/Spring-Boot-and-Java-versions.jpg)
 
 
 ### Some of the dependencies for Gateway, Service Discovery Client and Actuator functionalities:
-![dependencies](SpingBootWithEureka/assets/images/dependencies.jpg)
+![dependencies](ContactsServiceDiscoveryWithSpingBootEureka/assets/images/dependencies.jpg)
 
 ### Short Documentation
 The URL to access API Gateway is:
@@ -37,7 +37,7 @@ Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
 `To err, to share, to get feedback <- my way of learning!`
 
 
-## 2. Java 17 Features [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java17Features/src)
+## 2. Java 17 Examples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java17Examples/src)
 - restore always-Strict floating-point semantics
 - enhanced pseudo-random number generators
 - new macOS rendering pipeline
@@ -54,7 +54,7 @@ Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
 - context-specific deserialization filters
 Source code will be available soon.
 
-## 3. Java 14 Features [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java14FeaturesPoc/src)
+## 3. Java 14 Examples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java14examples/src)
 JDK 14 features used in various implementations:
 - **InstanceofPatternMatching.java :** to declare reference for matching object upon checking its type
 - **NullPointerExceptionPlus.java :** to get a more descriptive NPE description
@@ -62,7 +62,7 @@ JDK 14 features used in various implementations:
 - **SwitchExpressions.java :** to use switch expressions instead of switch statements
 - **TextBlockVsString.java :** to demonstrate a text block literal 
 
-## 4. Java 11 Features [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java11Features/src/java11)
+## 4. Java 11 Examples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java11Examples/src/java11)
 JDK 11 features used in various implementations:
 - **CollectionPlus.java :** to get arrays out of lists
 - **FilesReadStringWriteString.java :** to read from and write to file
@@ -83,10 +83,10 @@ And more on the way!
 - a shopping site implementation with vanilla JavaScript, CSS and HTML
 - To visit the cloud-hosted site, smile and step in to [RRShops](https://rrshops.netlify.app/)
 
-## 7. Java 8 DateTime code samples
+## 7. Java 8 DateTime code samples [Link](https://github.com/rishiraj88/CodeSamples/blob/main/Java%208%20DateTime%20code%20samples.md)
 - Code fragments for learners to refer and use quickly frequently used methods out of new Java DateTime API in Java 8+.
 
-## 8. Java Stream Collector/Collectors methods to Collect Streaming Data
+## 8. Java Stream Collector/Collectors methods to Collect Streaming Data [Link](https://github.com/rishiraj88/CodeSamples/blob/main/Java%20Stream%20collector-s%20methods.md)
 - Code fragments for learners to learn and use efficiently all of the end-user-level methods of Java Stream API in Java 8+.
 
 ## 9. More Java Samples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/JavaSamples/src)
@@ -100,6 +100,6 @@ And more to come up!
 
 ### Notes
 These repositories feature in-development programs and projects, too.
-By the way, continuous development and continuous integration is my personal favorite.
+By the way, continuous development and continuous integration is an obvious good.
 
 ## More to come up soon!
