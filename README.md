@@ -11,11 +11,11 @@ The following have been used here:
 - Various dependencies for Microservices/modules
 
 ### Spring Boot and Java Specifications:
-![Spring Boot and Java](SpingBootWithEureka/assets/images/Spring-Boot-and-Java-versions.jpg)
+![Spring Boot and Java](ContactsServiceDiscoveryWithSpingBootEureka/assets/images/Spring-Boot-and-Java-versions.jpg)
 
 
 ### Some of the dependencies for Gateway, Service Discovery Client and Actuator functionalities:
-![dependencies](SpingBootWithEureka/assets/images/dependencies.jpg)
+![dependencies](ContactsServiceDiscoveryWithSpingBootEureka/assets/images/dependencies.jpg)
 
 ### Short Documentation
 The URL to access API Gateway is:
@@ -37,7 +37,7 @@ Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
 `To err, to share, to get feedback <- my way of learning!`
 
 
-## 2. Java 17 Features [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java17Features/src)
+## 2. Java 17 Examples [Link](https://github.com/rishiraj88/CodeSamples/Java17Examples/src)
 - restore always-Strict floating-point semantics
 - enhanced pseudo-random number generators
 - new macOS rendering pipeline
@@ -54,7 +54,7 @@ Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
 - context-specific deserialization filters
 Source code will be available soon.
 
-## 3. Java 14 Features [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java14FeaturesPoc/src)
+## 3. Java 14 Examples [Link](https://github.com/rishiraj88/CodeSamples/Java14examples/src)
 JDK 14 features used in various implementations:
 - **InstanceofPatternMatching.java :** to declare reference for matching object upon checking its type
 - **NullPointerExceptionPlus.java :** to get a more descriptive NPE description
@@ -62,7 +62,7 @@ JDK 14 features used in various implementations:
 - **SwitchExpressions.java :** to use switch expressions instead of switch statements
 - **TextBlockVsString.java :** to demonstrate a text block literal 
 
-## 4. Java 11 Features [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java11Features/src/java11)
+## 4. Java 11 Examples [Link](https://github.com/rishiraj88/CodeSamples/Java11Examples/src)
 JDK 11 features used in various implementations:
 - **CollectionPlus.java :** to get arrays out of lists
 - **FilesReadStringWriteString.java :** to read from and write to file
@@ -72,24 +72,59 @@ JDK 11 features used in various implementations:
 - **OptionalIsEmpty.java :** to demonstrate Optional.isEmpty() 
 - **StringApiPlus.java :** to demonstrate the new methods of String API in Java 11
 
-## 5. LeetCode Problems Solved [Link](https://github.com/rishiraj88/LeetCode)
+## 5. Python Scripts and Programs (without Notebooks) [Link](https://github.com/rishiraj88/CodeSamples/python101)
+- addTwoNums.py
+- areaOfTriangleByBaseAndHeight.py
+- armstrongNumber.py
+- armstrongNumbersInRange.py
+- checkEvenOddNumber.py
+- checkLeapYear.py
+- checkPositiveNegativeZero.py
+- checkPrimeNumber.py
+- convertKmToMile.py
+- convertMileToKm.py
+- desktop.ini
+- factorial.py
+- fibonacciSeries.py
+- generateRandomNumber.py
+- largestNumberQuiz.py
+- largestOfThreeNumbers.py
+- main.py
+- multiplicationTable.py
+- o2c_otc.pdf
+- passwordGenerator.py
+- powersOfTwo.py
+- printHelloWorld.py
+- printPrimeNumberInSomeRange.py
+- readPdfFileOut.py
+- squareRoot.py
+- swapTwoNumbers.py
+- temperatureCelToFahr.py
+
+## 6. Python: Jupyter Notebooks (.ipynb) [Link](https://github.com/rishiraj88/CodeSamples/tree/main/python102)
+- calendar
+- cube root
+- random module use
+
+
+## 7. LeetCode Problems Solved [Link](https://github.com/rishiraj88/LeetCode)
 - **LC01TwoSum.java :** Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 - **LC02AddTwoNumbers.java :** Given two non-empty linked lists representing twonon-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 - **LcMaxConsecutiveOnes.java :** to find the length of the longest subsequence having only 1's else to return 0
 - **LcSeptemberLeetcodingChallenge2021Week4.java :** [WIP] to get the maximum length of possible words made with the segments provided in input arrays,  with the condition that no letters in the words must be repeated anyhow
 And more on the way!
 
-## 6. RRShopware [Link](https://github.com/rishiraj88/RRShopware)
+## 8. RRShopware [Link](https://github.com/rishiraj88/RRShopware)
 - a shopping site implementation with vanilla JavaScript, CSS and HTML
 - To visit the cloud-hosted site, smile and step in to [RRShops](https://rrshops.netlify.app/)
 
-## 7. Java 8 DateTime code samples
+## 9. Java 8 DateTime code samples [Link](https://github.com/rishiraj88/CodeSamples/blob/main/Java%208%20DateTime%20code%20samples.md)
 - Code fragments for learners to refer and use quickly frequently used methods out of new Java DateTime API in Java 8+.
 
-## 8. Java Stream Collector/Collectors methods to Collect Streaming Data
+## 10. Java Stream Collector/Collectors methods to Collect Streaming Data [Link](https://github.com/rishiraj88/CodeSamples/blob/main/Java%20Stream%20collector-s%20methods.md)
 - Code fragments for learners to learn and use efficiently all of the end-user-level methods of Java Stream API in Java 8+.
 
-## 9. More Java Samples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/JavaSamples/src)
+## 11. More Java Samples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/JavaSamples/src)
 - **DefaultEleValue.java :** to test default values of elements of array
 - **MedianOfTwoArrays.java :** to find the median for the elements of two arrays taken together
 - **SecondLargest.java :** to find second largest element in an array of integers
@@ -100,6 +135,6 @@ And more to come up!
 
 ### Notes
 These repositories feature in-development programs and projects, too.
-By the way, continuous development and continuous integration is my personal favorite.
+By the way, continuous development and continuous integration is an obvious good.
 
 ## More to come up soon!
