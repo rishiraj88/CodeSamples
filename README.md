@@ -37,7 +37,7 @@ Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
 `To err, to share, to get feedback <- my way of learning!`
 
 
-## 2. Java 17 Examples [Link](https://github.com/rishiraj88/CodeSamples/Java17Examples/src)
+## 2. Java 17 Examples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java17Examples/src)
 - restore always-Strict floating-point semantics
 - enhanced pseudo-random number generators
 - new macOS rendering pipeline
@@ -54,7 +54,7 @@ Kindly ignore the spelling error in path name ('Sping') if you get to notice it.
 - context-specific deserialization filters
 Source code will be available soon.
 
-## 3. Java 14 Examples [Link](https://github.com/rishiraj88/CodeSamples/Java14examples/src)
+## 3. Java 14 Examples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java14examples/src)
 JDK 14 features used in various implementations:
 - **InstanceofPatternMatching.java :** to declare reference for matching object upon checking its type
 - **NullPointerExceptionPlus.java :** to get a more descriptive NPE description
@@ -62,7 +62,7 @@ JDK 14 features used in various implementations:
 - **SwitchExpressions.java :** to use switch expressions instead of switch statements
 - **TextBlockVsString.java :** to demonstrate a text block literal 
 
-## 4. Java 11 Examples [Link](https://github.com/rishiraj88/CodeSamples/Java11Examples/src)
+## 4. Java 11 Examples [Link](https://github.com/rishiraj88/CodeSamples/tree/main/Java11Examples/src)
 JDK 11 features used in various implementations:
 - **CollectionPlus.java :** to get arrays out of lists
 - **FilesReadStringWriteString.java :** to read from and write to file
@@ -72,7 +72,7 @@ JDK 11 features used in various implementations:
 - **OptionalIsEmpty.java :** to demonstrate Optional.isEmpty() 
 - **StringApiPlus.java :** to demonstrate the new methods of String API in Java 11
 
-## 5. Python Scripts and Programs (without Notebooks) [Link](https://github.com/rishiraj88/CodeSamples/python101)
+## 5. Python Scripts and Programs (without Notebooks) [Link](https://github.com/rishiraj88/CodeSamples/tree/main/python101)
 - addTwoNums.py
 - areaOfTriangleByBaseAndHeight.py
 - armstrongNumber.py
