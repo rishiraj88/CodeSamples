@@ -16,4 +16,9 @@ public class Address {
     public String getSteetCode(){
         return steetCode;
     }
+
+    @Override
+    public String toString() {
+        return String.format("H.No. %s, %s, %s, %s",houseNr,steetCode,zipCode,country.toUpperCase());
+    }
 }
