@@ -1,0 +1,5 @@
+hellodjangoproj/venv
+hellodjangoproj/hello_django/__pycache__
+
+# Other directories and files are obvious to ignore, but for the sake of 
+# the verification of directory structures by readers, those are not ignored.
