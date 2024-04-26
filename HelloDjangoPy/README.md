@@ -8,13 +8,13 @@
 
 ## Steps to Install, Create and Test (With Screenshots)
 - Run the initialization script. Make sure it is executable.
-![init.sh script file]assets/images/init-script.png)
+![init.sh script file](assets/images/init-script.png)
 
 - The output listing of the script may resemble this:
-![Script listing on Terminal]assets/images/terminal-listing.png)
+![Script listing on Terminal](assets/images/terminal-listing.png)
 
 - View your DJango app in any modern web browser 
-![DJango app in web browser]assets/images/hello-web-app.png)
+![DJango app in web browser](assets/images/hello-web-app.png)
 
 ## Contact Pointers
 - **LinkedIn:** <https://www.linkedin.com/in/rishirajopenminds>
