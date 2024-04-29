@@ -5,7 +5,7 @@ The following tools are used for implementation of microservices of the app:
 - Java 17
 - Various dependencies for different Microservices/modules
 
-## Status as on 91-Mar-2024
+## Status as on 19-Mar-2024
 The application is running flawlessly.
 
 #### Eureka Dashboard

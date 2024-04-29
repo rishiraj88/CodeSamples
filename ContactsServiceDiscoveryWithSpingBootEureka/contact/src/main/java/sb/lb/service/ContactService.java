@@ -1,6 +1,7 @@
-package springboot.loadbalancer.service;
+package sb.lb.service;
 
-import springboot.loadbalancer.entity.Contact;
+
+import sb.lb.model.Contact;
 
 import java.util.List;
 

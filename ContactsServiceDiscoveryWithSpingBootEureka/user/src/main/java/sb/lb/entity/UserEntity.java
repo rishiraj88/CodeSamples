@@ -1,23 +1,23 @@
-package springboot.loadbalancer.entity;
+package sb.lb.entity;
 
-import java.util.ArrayList;
+import sb.lb.model.Contact;
+
 import java.util.List;
 
-public class User {
+public class UserEntity {
     private Long userId;
     private String name;
     private String phone;
+    List<Contact> contacts = null;
 
-    List<Contact> contacts = new ArrayList<Contact>();
-
-    public User(Long userId, String name, String phone, List<Contact> contacts) {
+    public UserEntity(Long userId, String name, String phone, List<Contact> contacts) {
         this.userId = userId;
         this.name = name;
         this.phone = phone;
         this.contacts = contacts;
     }
 
-    public User(Long userId, String name, String phone) {
+    public UserEntity(Long userId, String name, String phone) {
         this.userId = userId;
         this.name = name;
         this.phone = phone;

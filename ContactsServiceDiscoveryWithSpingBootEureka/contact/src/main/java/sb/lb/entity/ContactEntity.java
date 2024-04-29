@@ -1,21 +1,20 @@
-package springboot.loadbalancer.entity;
+package sb.lb.entity;
 
-public class Contact {
+public class ContactEntity {
     private Long contactId;
     private String email;
     private String contactName;
-
     private Long userId;
     private String userName;
 
-    public Contact(Long contactId, String email, String contactName, Long userId) {
+    public ContactEntity(Long contactId, String email, String contactName, Long userId) {
         this.contactId = contactId;
         this.email = email;
         this.contactName = contactName;
         this.userId = userId;
     }
 
-    public Contact() {
+    public ContactEntity() {
     }
 
     public void setContactId(Long contactId) {
