@@ -3,7 +3,7 @@
  * @author rishiraj
  * to test default values of elements of array
  */
-public class DefaultEleValue {
+public class DefaultElementValue {
  public static void main(String[] args) {
 	int[] intArr = new int[10];
 	intArr[0] = 2;
