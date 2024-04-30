@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import sb.lb.model.Contact;
 import sb.lb.model.User;
+import sb.lb.model.types.ContactList;
 import sb.lb.service.UserService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -19,18 +21,18 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
-
     @Autowired
     private RestTemplate restTemplate;
 
     @GetMapping("/{userId}")
     public ResponseEntity<User> getUser(@PathVariable("userId") Long userId) {
         User user = userService.getUser(userId);
+        List<Contact> retrievedContacts = null;
         if (null != user) {
-            List<Contact> contacts = restTemplate.getForObject("http://contact-service/contact/user/" + userId, List.class);
-            user.setContacts(contacts);
+            ContactList contactList = restTemplate.getForObject("http://contact-service/contact/user/" + userId, ContactList.class);
+            if (null == contactList) retrievedContacts = new ArrayList<>();
+            user.setContacts(retrievedContacts);
             return new ResponseEntity<User>(user, HttpStatus.OK);
-        } else
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        } else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 }

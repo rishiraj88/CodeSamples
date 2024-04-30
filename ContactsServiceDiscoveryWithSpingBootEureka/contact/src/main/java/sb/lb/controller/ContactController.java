@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import sb.lb.model.Contact;
 import sb.lb.model.User;
+import sb.lb.model.types.ContactList;
 import sb.lb.service.ContactService;
 
 import java.util.List;
@@ -23,15 +24,20 @@ public class ContactController {
     private RestTemplate restTemplate;
 
     @RequestMapping("/user/{userId}")
-    public ResponseEntity<List<Contact>> getContactsForUser(@PathVariable("userId") Long userId) {
-        List<Contact> contacts = contactService.getContactsOfUser(userId);
+    public ResponseEntity<ContactList> getContactsForUser(@PathVariable("userId") Long userId) {
+        List<Contact> contacts =contactService.getContactsOfUser(userId);
+
 
         if (null == contacts || contacts.isEmpty())
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         else {
             User user = restTemplate.getForObject("http://user-service/user/"+userId,User.class);
-            contacts.forEach(contact -> contact.setUserName(user.getName()));
-            return new ResponseEntity<List<Contact>>(contacts, HttpStatus.OK);
+
+                    contacts.forEach(contact -> contact.setUserName(user.getName()));
+            ContactList retrievedContacts = new ContactList();
+            retrievedContacts.getContacts().addAll(contacts);
+
+            return new ResponseEntity<ContactList>(retrievedContacts, HttpStatus.OK);
         }
     }
 }

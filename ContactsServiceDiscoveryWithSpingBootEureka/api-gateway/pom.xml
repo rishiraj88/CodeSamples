@@ -8,11 +8,11 @@
         <version>2.3.4.RELEASE</version>
         <relativePath/> <!--2.3.4.RELEASE to use other get error: java.lang.IllegalArgumentException: Unable to find GatewayFilterFactory with name CircuitBreaker -->
     </parent>
-    <groupId>springboot.apigateway</groupId>
+    <groupId>sb.apigateway</groupId>
     <artifactId>api-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>api-gateway</name>
-    <description>API Gateway for Contact Search app for accessing its microservices</description>
+    <description>API Gateway for Contact Search app in Spring Cloud</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.SR8</spring-cloud.version><!--Hoxton.SR8-->

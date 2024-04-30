@@ -46,7 +46,8 @@ public class User {
     }
 
     public String getName() {
-        return name;
+
+        return null == name?"":name;
     }
 
     public String getPhone() {

@@ -11,18 +11,13 @@ import java.time.Duration;
 
 @SpringBootApplication
 public class ContactApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(ContactApplication.class, args);
     }
 
     @Bean
-    @LoadBalanced
+   @LoadBalanced
     public RestTemplate restTemplate(RestTemplateBuilder builder) {
-        return builder
-                .setConnectTimeout(Duration.ofMillis(3000))
-                .setReadTimeout(Duration.ofMillis(3000))
-                .build();
+        return builder.setConnectTimeout(Duration.ofMillis(3000)).setReadTimeout(Duration.ofMillis(3000)).build();
     }
-
 }
