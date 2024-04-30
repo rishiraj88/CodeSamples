@@ -26,7 +26,7 @@ spring:
                 name: contact-service
                 fallbackuri: forward:/contactServiceFallback
 
-hytrix:
+hystrix:
   command:
     fallbackcmd:
       execution:
