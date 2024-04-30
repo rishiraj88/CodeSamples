@@ -1,4 +1,4 @@
-# CodeSamples
+# CodeSamples [to be moved to another repository]
 Code samples and quick PoC's
 ... for learners and seekers to refer quickly.
 
