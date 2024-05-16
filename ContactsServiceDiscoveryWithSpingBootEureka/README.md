@@ -1,4 +1,4 @@
-# Contacts Service App
+# Contacts Service App [Decommissioned]
 A contact-search application, showcasing Eureka Service Discovery implemented with Spring Boot.
 The following tools are used for implementation of microservices of the app:
 - Spring Boot v2.5.6
