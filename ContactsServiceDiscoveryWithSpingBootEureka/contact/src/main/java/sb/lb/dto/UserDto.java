@@ -1,25 +1,23 @@
-package sb.lb.model;
-
-import sb.lb.model.Contact;
+package sb.lb.dto;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+public class UserDto {
     private Long userId;
     private String name;
     private String phone;
 
-    List<Contact> contacts = new ArrayList<Contact>();
+    List<ContactDto> contacts = new ArrayList<ContactDto>();
 
-    public User(Long userId, String name, String phone, List<Contact> contacts) {
+    public UserDto(Long userId, String name, String phone, List<ContactDto> contacts) {
         this.userId = userId;
         this.name = name;
         this.phone = phone;
         this.contacts = contacts;
     }
 
-    public User(Long userId, String name, String phone) {
+    public UserDto(Long userId, String name, String phone) {
         this.userId = userId;
         this.name = name;
         this.phone = phone;
@@ -37,7 +35,7 @@ public class User {
         this.phone = phone;
     }
 
-    public void setContacts(List<Contact> contacts) {
+    public void setContacts(List<ContactDto> contacts) {
         this.contacts = contacts;
     }
 
@@ -54,7 +52,7 @@ public class User {
         return phone;
     }
 
-    public List<Contact> getContacts() {
+    public List<ContactDto> getContacts() {
         return contacts;
     }
 }

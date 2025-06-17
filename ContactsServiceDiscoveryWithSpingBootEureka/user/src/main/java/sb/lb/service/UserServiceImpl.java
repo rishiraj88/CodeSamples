@@ -1,8 +1,8 @@
 package sb.lb.service;
 
 import org.springframework.stereotype.Service;
+import sb.lb.dto.UserDto;
 import sb.lb.entity.UserEntity;
-import sb.lb.model.User;
 import sb.lb.util.Mapper;
 
 import java.util.List;
@@ -17,10 +17,10 @@ public class UserServiceImpl implements UserService {
             );
 
     @Override
-    public User getUser(Long id) {
-        UserEntity entity = list.stream().filter(u -> u.getUserId().equals(id)).findAny().orElse(null);
+    public UserDto getUser(Long id) {
+        UserEntity userEntity = list.stream().filter(u -> u.getUserId().equals(id)).findAny().orElse(null);
 
-        User model = Mapper.entityToModel(entity);
-        return model;
+        UserDto userDto = Mapper.entityToDto(userEntity);
+        return userDto;
     }
 }

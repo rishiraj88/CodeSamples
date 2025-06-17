@@ -1,18 +1,18 @@
 package sb.lb.util;
 
+import sb.lb.dto.ContactDto;
 import sb.lb.entity.ContactEntity;
-import sb.lb.model.Contact;
 
 public class Mapper {
-    public static Contact entityToModel(ContactEntity entity) {
-        Contact model = new Contact();
+    public static ContactDto entityToDto(ContactEntity entity) {
+        ContactDto contactDto = new ContactDto();
 
-        model.setContactId(entity.getContactId());
-        model.setEmail(entity.getEmail());
-        model.setContactName(entity.getContactName());
-        model.setUserId(entity.getUserId());
-        model.setUserName(entity.getUserName());
+        contactDto.setContactId(entity.getContactId());
+        contactDto.setEmail(entity.getEmail());
+        contactDto.setContactName(entity.getContactName());
+        contactDto.setUserId(entity.getUserId());
+        contactDto.setUserName(entity.getUserName());
 
-        return model;
+        return contactDto;
     }
 }

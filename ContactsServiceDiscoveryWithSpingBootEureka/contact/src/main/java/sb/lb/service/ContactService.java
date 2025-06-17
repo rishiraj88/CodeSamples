@@ -1,11 +1,10 @@
 package sb.lb.service;
 
 
-import sb.lb.model.Contact;
+import sb.lb.dto.ContactDto;
 
 import java.util.List;
 
 public interface ContactService {
-
-    public List<Contact> getContactsOfUser(Long userId);
+    public List<ContactDto> getContactsOfUser(Long userId);
 }

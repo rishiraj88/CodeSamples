@@ -1,20 +1,20 @@
-package sb.lb.model;
+package sb.lb.dto;
 
-public class Contact {
+public class ContactDto {
     private Long contactId;
     private String email;
     private String contactName;
 
     private Long userId;
 
-    public Contact(Long contactId, String email, String contactName, Long userId) {
+    public ContactDto(Long contactId, String email, String contactName, Long userId) {
         this.contactId = contactId;
         this.email = email;
         this.contactName = contactName;
         this.userId = userId;
     }
 
-    public Contact() {
+    public ContactDto() {
     }
 
     public void setContactId(Long contactId) {

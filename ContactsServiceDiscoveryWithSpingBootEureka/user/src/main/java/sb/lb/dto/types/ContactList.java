@@ -1,18 +1,19 @@
-package sb.lb.model.types;
+package sb.lb.dto.types;
 
-import sb.lb.model.Contact;
+
+import sb.lb.dto.ContactDto;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ContactList {
-    private List<Contact> contacts;
+    private List<ContactDto> contacts;
 
     {
         contacts = new ArrayList<>();
     }
 
-    public List<Contact> getContacts() {
+    public List<ContactDto> getContacts() {
         return contacts;
     }
 }

@@ -1,6 +1,7 @@
 package sb.lb.entity;
 
-import sb.lb.model.Contact;
+
+import sb.lb.dto.ContactDto;
 
 import java.util.List;
 
@@ -8,9 +9,9 @@ public class UserEntity {
     private Long userId;
     private String name;
     private String phone;
-    List<Contact> contacts = null;
+    List<ContactDto> contacts = null;
 
-    public UserEntity(Long userId, String name, String phone, List<Contact> contacts) {
+    public UserEntity(Long userId, String name, String phone, List<ContactDto> contacts) {
         this.userId = userId;
         this.name = name;
         this.phone = phone;
@@ -35,7 +36,7 @@ public class UserEntity {
         this.phone = phone;
     }
 
-    public void setContacts(List<Contact> contacts) {
+    public void setContacts(List<ContactDto> contacts) {
         this.contacts = contacts;
     }
 
@@ -51,7 +52,7 @@ public class UserEntity {
         return phone;
     }
 
-    public List<Contact> getContacts() {
+    public List<ContactDto> getContacts() {
         return contacts;
     }
 }

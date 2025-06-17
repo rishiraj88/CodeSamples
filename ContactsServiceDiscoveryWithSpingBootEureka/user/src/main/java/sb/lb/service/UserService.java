@@ -1,9 +1,9 @@
 package sb.lb.service;
 
-import sb.lb.model.User;
+import sb.lb.dto.UserDto;
 
 public interface UserService {
 
-    public abstract User getUser(Long id);
+    public abstract UserDto getUser(Long id);
 
 }

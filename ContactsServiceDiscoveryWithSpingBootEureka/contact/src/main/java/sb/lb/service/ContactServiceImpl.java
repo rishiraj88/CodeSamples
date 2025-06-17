@@ -1,10 +1,9 @@
 package sb.lb.service;
 
 import org.springframework.stereotype.Service;
+import sb.lb.dto.ContactDto;
 import sb.lb.entity.ContactEntity;
-import sb.lb.model.Contact;
 import sb.lb.util.Mapper;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -19,9 +18,9 @@ public class ContactServiceImpl implements ContactService {
             );
 
     @Override
-    public List<Contact> getContactsOfUser(Long userId) {
+    public List<ContactDto> getContactsOfUser(Long userId) {
         List<ContactEntity> contactEntities = list.stream().filter(contact -> contact.getUserId().equals(userId))
                 .toList();
-       return contactEntities.stream().map(Mapper::entityToModel).collect(Collectors.toList());
+       return contactEntities.stream().map(Mapper::entityToDto).collect(Collectors.toList());
     }
 }
