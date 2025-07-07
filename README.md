@@ -3,4 +3,3 @@
 - depicting various services, interacting with one another
 - with API Gateway implementation together with load balancing
 
-## Archived now.
